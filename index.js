@@ -11,8 +11,8 @@ const showCaptcha = document.querySelector(".captcha-show");
 
 function setCaptcha() {
     let newCaptcha = captchaValue.split("").map((ele) => {
-        const rotate = -20 + Math.trunc(Math.random() * 30);
-        const font = Math.trunc(Math.random() * fonts.length);
+        const rotate = -20 + Math.floor(Math.random() * 30);
+        const font = Math.floor(Math.random() * fonts.length);
         return `<span style="transform : rotate(${rotate}deg) font-family : ${fonts[font]}">
                     ${ele}
                 </span>`
